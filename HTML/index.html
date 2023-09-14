@@ -4,31 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviatio Tales</title>
+    <link rel="stylesheet" href="/Aviation_Tales/CSS/index.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <!-- This is the main container div -->
     <div style="width: 100%;height: 100%;" id="container" class="container">
         <!-- Header Part of the Program -->
-        <div id="header">
-            <div id="logo_name" class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div id="img_logo" class="col-sm-4 col-md-3 col-lg-1 col-xl-1">
-                    <img src="" alt="Aviation Tales" href="#container">
+        <div id="header" class="container">
+            <div id="logo_name" class="row">
+                <div class="col-xs-4 col-sm-3 col-md-2 col-lg-1">
+                    <img id="img_logo" src="" alt="Aviation Tales" href="#container">
                 </div>
-                <div id="title" class="col-sm-8 col-md-9 col-lg-11 col-xl-1">
-                    <p id="title_name">Aviation Tales</p>
+                <div id="title" class="col-xs-8 col-sm-9 col-md-10 col-lg-11">
+                    <h1 id="title_name">Aviation Tales</h1>
                 </div>
             </div>
-            <div id="navigation_Bar">
-                <div id="home_Button">
+            <!-- 
+                NOTE: for xs and sm this should go to another button like we see for the smaller device...
+                Code not yet writen [Only for Navigation Bar]
+            -->
+            <div id="navigation_Bar" class="row">
+                <div id="home_Button" class="col-md-1 col-lg-1">
                     <p><a href="/Aviation_Tales/HTML/index.html">Home</a></p>
                 </div>
-                <div id="videos_Button">
+                <div id="videos_Button" class="col-md-1 col-lg-1">
                     <p><a href="/Aviation_Tales/HTML/videos_list.html">Videos</a></p>
                 </div>
-                <div id="blog_Button">
+                <div id="blog_Button" class="col-md-1 col-lg-1">
                     <p><a href="/Aviation_Tales/HTML/blog_list.html">Blog</a></p>
                 </div>
-                <div id="catagory_Button">
+                <div id="catagory_Button" class="col-md-2 col-lg-2">
                     <select>
                         <options>Select</options>
                         <options href="/Aviation_Tales/HTML/air_Crash_Documentary_Videos.html">Air Crash Documentary</options>
@@ -36,13 +51,16 @@
                         <option href="/Aviation_Tales/HTML/facts_Videos.html">Intresting Facts</option>
                     </select>
                 </div>
-                <div id="stats_Button">
+                <div id="stats_Button" class="col-md-1 col-lg-1">
                     <p><a href="/Aviation_Tales/HTML/stats.html">Stats</a></p>
                 </div>
-                <div id="login_Button">
+                <div class="col-md-4 col-lg-4">
+                    <!-- Empty div to create some extra space -->
+                </div>
+                <div id="login_Button" class="col-md-1 col-md-1">
                     <p><a href="/Aviation_Tales/HTML/login.html">Login</a></p>
                 </div>
-                <div id="register_Button">
+                <div id="register_Button" class="col-md-1 col-md-1">
                     <p><a href="/Aviation_Tales/HTML/register.html">Register</a></p>
                 </div>
             </div>
@@ -50,8 +68,112 @@
 
 
         <!-- main body part -->
-        <div id="main_body">
+        <div id="main_body" class="container">
+            <div>
+                <marquee behavior="scroll" direction="left">
+                    <a>Click Here </a>to watch our latest video 
+                </marquee>
+            </div>
 
+            <!-- main content a image on one side and the about us on the other side  -->
+            <div class="row">
+                <div id="image_body" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    
+                </div>
+                <div id="about_body" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h1>Welcome to Aviation Tales</h1>
+                    <p>A place for all aviation enthusiastics. We provide content on stories on aviation Industry.
+                        We do documentary on airplane crashes, miracle landings and miracle survivals, Technology
+                        videos explaning the mechanism of flying and many more. 
+                        We provide articles on subject like details plane crash and latest news... 
+                    </p>
+                    <p>Register to get to notification on our latest conten.
+                    </p>
+                    <p>Subscribe to our Youtube channel by clicking on the link below to get notification 
+                        on latest videos
+                    </p>
+                    <!-- Aviation Tales Youtube Channel link need to update  -->
+                    <a href="">Click here to visit our Youtube Channel</a>
+                </div>            
+            </div>
+            <hr>
+            
+            <!-- for the best video of the channel -->
+            <div id="video_body" class="row">
+                <div id="video_body_video_part" class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                </div>
+                <div id="video_body_description_part" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                </div>
+            </div>
+
+
+            <!-- for the article part  -->
+            <div id="article_body" class="row">
+                <p>Check our latest article</p>
+                <div id="article_body_content_1" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="inside_article_body">
+                        <div class="article_content">
+                            <a href="">Article 1 this is about aircraft investigation 
+                                the miracle landing on Hutson river
+                            </a>
+                        </div>
+                        <div class="article_content">
+                            <a href="">Article 2 this article is about the miracle landing 
+                                of the plane landined on hudson river
+                            </a>
+                        </div>
+                        <div class="article_content">
+                            <a href="">Article 3 this article is about the miracle landing 
+                                of the plane on the hudson river
+                            </a>
+                        </div>
+                        <div class="article_content">
+                            <a href="">Article 4 this the article is about the miracle landing 
+                                of the US Airways fight that landed on hudson river
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="article_body_content_2" class="col-sx-12 col-sm-12 col-md-6 col-mg-6">
+                    <div class="inside_article_body">
+                        <div class="article_content">
+                            <a href="">Aticle 5 this article is about miracle survival of vissna
+                                volovic
+                            </a>
+                        </div>
+                        <div class="article_content">
+                            <a href="">
+                                Article 6 this article is about miracle survival of vissna volovic
+                                who fell from a plane
+                            </a>
+                        </div>
+                        <div class="article_content">
+                            <a href="">
+                                Article 7 this article is about miracle survival fall of vissna 
+                                volovic who survied from a plane fall
+                            </a>
+                        </div>
+                        <div class="article_content">
+                            <a href="">
+                                Article 8 this article is about miracle survucal fall of vissna 
+                                volovic who was a flight attended who survid a plane free fall
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer of the website -->
+        <div id="footer">
+            <div id="footer_discription">
+                <p>Received all rights for 2023</p>
+            </div>
+            <div id="footer_t&c">
+                <a href="">click here for T&C</a>
+            </div>
         </div>
     </div>
 

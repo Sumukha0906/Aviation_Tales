@@ -10,6 +10,19 @@
     height: 70%;
     display: flex;
 }
+#img_logo{
+    margin-left: 0%;
+    margin: auto;
+}
+#title{
+    align-items: center;
+    text-align: center;
+}
+#title_name{
+    color: wheat;
+    font-size: large;
+}
+
 /* second part: navation bar */
 #navigation_Bar{
     width: 100%;
@@ -18,7 +31,27 @@
     margin: auto;
     padding: auto;
 }
+#home_Button{
 
+}
+#videos_Button{
+
+}
+#blog_Button{
+
+}
+#catagory_Button{
+
+}
+#stats_Button{
+
+}
+#login_Button{
+
+}
+#register_Button{
+    
+}
 
 /* Main Body Part  */
 #main_body{
